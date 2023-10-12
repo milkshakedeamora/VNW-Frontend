@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #dad7db;
+    padding: 0;
+}
+
+header {
+    background-color: #dfb1fa;   
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+    
+}
+h3{
+    text-align: center;
+    font-size: 200%;
+  
+  background: linear-gradient(to right, #b1df9e 20%, #b1b9f9 40%, #f9b1b1 60%, #f9d1b1  80%);
+  background-size: 200% auto;  
+  -webkit-background-clip: text;
+  background-clip: text;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: textShine 5s ease-in-out infinite alternate;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+}
+}
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+}
+
+section {
+    width: 30%;
+    text-align: center;
+    margin: 0 10px; /* Espaço entre as seções */
+}
+h2 {
+    font-size: 1.5rem;
+    color: #c676f5;
+}
+
+footer {
+    background-color: #dfb1fa;   
+    text-align: center;
+    
+}
+
+a {
+   
+    text-decoration: none;
+   
+  
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
