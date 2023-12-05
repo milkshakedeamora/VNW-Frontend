@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <style>
+        body {
+            margin: 0;            
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        header {
+            width: 100%;
+            height: 40vh;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .carousel {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 100%;
+            height: 75%;
+        }
+
+        .img-carousel {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .carousel figure {
+            width: 80%; 
+            text-align: center;
+            margin: 0;
+        }
+
+        .carousel img {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: #333 solid;
+            
+        }
+
+        .carousel figcaption {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            margin: 5%;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            height: 20%;
+            color: black;
+            font-size: 20px;
+            border: none;
+            background: none;
+            
+        }
+
+        .prev {
+            left: 0.15%;
+        }
+
+        .next {
+            right: 0.15%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        footer img {
+            width: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Filmes</a>
+        <a href="#">Séries</a>
+    </nav>
+
+    <header>
+        <img src="https://s2-techtudo.glbimg.com/C0-Cotxr4fxGHXZUxWzkoHW2suo=/0x0:1200x630/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/G/n/fdCjoHRDA7SALudAtNlg/amp.png"
+            alt="Cabeçalho">
+    </header>
+
+    <main>
+        <div class="carousel">
+            <button class="carousel-btn prev">❮</button>
+            <div class="carousel img-carousel">
+                <figure>
+                    <img src="https://s2.glbimg.com/e-Onx3L8q79OktYj3sUx4WrRIDM=/e.glbimg.com/og/ed/f/original/2020/08/04/butcher-_clean.jpg"
+                        alt="THE BOYS">
+                    <figcaption>The Boys</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.themoviedb.org/t/p/original/3FjakKDEuaO8FpR1qJctV6njqYy.jpg"
+                        alt="TODO MUNDO ODEIA O CHRIS">
+                    <figcaption>Todo Mundo Odeia o Chris</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz-JS71PMi4RnUlYf3rHkKwNISRcOV16lcwIqj7V88ypDNr150"
+                        alt="INTERSTELLAR">
+                    <figcaption>Interstellar</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-btn next">❯</button>
+        </div>
+
+        <div class="carousel">
+            <button class="carousel-btn prev">❮</button>
+            <div class="carousel img-carousel">
+                <figure>
+                    <img src="https://sm.ign.com/t/ign_br/gallery/a/amazons-lo/amazons-lord-of-the-rings-the-rings-of-power-posters_k15w.600.jpg"
+                        alt="SENHOR DOS ANÉIS">
+                    <figcaption>O Senhor dos Anéis</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.tvguide.com/a/img/catalog/provider/1/1/1-6482810627.jpg"
+                        alt="THE BIG BANG THEORY">
+                    <figcaption>The Big Bang Theory</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://pbs.twimg.com/media/FPBkWBcXIAYEO4D?format=jpg&name=900x900"
+                        alt="TOP GUN">
+                    <figcaption>Top Gun</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-btn next">❯</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> © Prime Video & ™ Aneis do Poder LTD © 2022 MARVERIC. Reservados todos os direitos, Prime Video
+            <img src="https://bolsablindada.com.br/wp-content/uploads/2016/10/youtube-logo-vector-14.png"
+                alt="youtube-icon">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+                alt="instagram-white-icon">
+            <img src="https://seeklogo.com/images/A/amazon-prime-video-logo-6BB6062D90-seeklogo.com.png"
+                alt="amazon-prime-video-logo">
+        </p>
+    </footer>
+</body>
+
+</html>
+
