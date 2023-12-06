@@ -1,0 +1,197 @@
+/*CONFIGURAÇÕES ARQUIVO*/
+:root {
+  --verde: #5CA720; 
+  --marrom: #512200BD; 
+  --preto: #161616; 
+  --cinza: #A5A1A1; 
+  --branco: #fff;
+  --offwhite:#F9F9F9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--branco);
+  color: var(--preto);
+
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+h3 {
+  font-weight: lighter;
+}
+
+/* CONFIGURAÇÕES HEADER*/
+header h1 {
+  margin: 0;    
+  font-size: 90%;
+  font-family: 'Cabin', sans-serif;
+}
+
+.icons {
+  display: flex;
+  color: var(--verde);
+}
+
+.icons i {
+  margin-left: 7.5%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONFIGURAÇÕES MAIN*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: auto; 
+  gap: 5%;
+  padding: 10%;
+}
+
+.grid-item h2 {
+  font-weight: lighter;
+  font-size: 100%;
+}
+.grid-item {
+  padding: 1%;
+  text-align: left;
+  font-weight: lighter;
+}
+
+h2, p {
+  margin: 1% 0;
+}
+
+button {
+  padding: 6%;
+  background-color: var(--verde);
+  font-weight: bold;
+  font-size: 110%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--marrom);
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr)); 
+    gap: 1%; 
+    padding: 5%;
+  }
+
+  .grid-item {
+    padding: 1%; 
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+.img-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 1%; 
+  min-height: 60%; 
+  height: 60%;
+}
+
+.img-container::after {
+  content: '';
+  position: absolute;  
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #5da72085;
+  transition: top 0.5s;
+}
+
+.img-container:hover::after {
+  top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+.valor {
+  text-decoration: underline;
+  color: var(--verde);
+  font-weight: bold;
+  font-size: 115%;
+}
+
+/*FOOTER*/
+footer {
+  border-top: 2px var(--cinza) solid;
+  background-color: var(--offwhite);
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.line2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+
+.conteudo, .newsletter {
+  flex: 1;
+  padding: 2%;
+}
+
+input[type="submit"] {
+  background-color: var(--verde);
+  color: var(--branco);
+  size: 100%;
+  padding: 1.5% 4%; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-size: 100%; 
+}
+
+input[type="email"] {
+  background-color: var(--branco);
+  color: var(--cinza);
+  font-family: 'Lato', sans-serif;
+  padding: 1% 2%;
+  border: 2px var(--cinza) solid;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--marrom);
+}
+
+.pagamentos img {
+  width: auto;
+  height: 15px;
+  display: inline-block;
+}
+
