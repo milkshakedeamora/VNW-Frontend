@@ -1,4 +1,4 @@
-/*CONFIGURAÇÕES ARQUIVO*/
+/*CONFIGURAÇÕES CSS*/
 :root {
   --verde: #5CA720; 
   --marrom: #512200BD; 
@@ -11,6 +11,7 @@
 body {
   margin: 0;
   padding: 0;
+  border: 0;
   font-family: 'Lato', sans-serif;
   background-color: var(--branco);
   color: var(--preto);
@@ -55,7 +56,7 @@ header img {
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-auto-rows: auto; 
   gap: 5%;
-  padding: 10%;
+  padding: 7.5%;
 }
 
 .grid-item h2 {
@@ -81,6 +82,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0px 6px 4px var(--cinza);
 }
 
 button:hover {
@@ -92,6 +94,10 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(48%, 1fr)); 
     gap: 1%; 
     padding: 5%;
+    
+  }
+  main{
+    margin-bottom: 5%;
   }
 
   .grid-item {
@@ -195,3 +201,24 @@ input[type="submit"]:hover {
   display: inline-block;
 }
 
+@media screen and (max-width: 600px) {
+  .line2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+
+  .conteudo,
+  .newsletter {
+    width: 100%;
+    margin-bottom: 2%;
+    align-items: center; 
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin: 0 auto; 
+    display: block; 
+  }
+}
