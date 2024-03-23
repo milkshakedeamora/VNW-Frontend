@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*hamburguer - MainBody*/
+.line {
+    display: block;
+  }
+.hamburguer {
+    background-color: #FFC72C;
+}
+.span {
+    color: #DB0007;
+}
+.hamburguer h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+.text-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px 0px 100px;
+}
+.img-atual {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.imagens {
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding: 25px 320px;
+  }
+
+
+

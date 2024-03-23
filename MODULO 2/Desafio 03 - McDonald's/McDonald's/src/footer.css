@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edf5ef;
+    padding: 10px;
+    
+  }
+  
+  .footer .logo img {
+    width: auto;
+    height: 15px;
+  }
+  .lojas img {
+    width: auto;
+    height: 30px;
+  }
+  
+  .logo {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 500px;
+  }
+  
+  .logo p {
+    margin-left: 10px;
+    text-align: right;
+    overflow: hidden;
+    font-family: 'Reboto', sans-serif;
+    font-size: 12px;
+  }
+  
+  
+  .lojas {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lojas img {
+    margin-right: 10px;
+  }
+  

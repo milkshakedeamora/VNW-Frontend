@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Reboto:wght@300;400;500;700&display=swap');
+.promocoes{
+    font-family: 'Reboto', sans-serif;
+    background-color: #FFBC0D;   
+    padding: 40px;
+}
+
+.promocoes h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+.cards  {
+    
+    display: flex;
+    align-items: center;
+    align-items:flex-end;
+    text-align: justify;
+    font-size: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;    
+    border-radius: 15px;
+    font-weight: bolder;
+    width: 280px;
+    padding-bottom: 9px;
+    
+  }
+  .card-text{
+    padding: 10px;
+    
+  }
+  
+  .card img {    
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .btn {
+    border-radius: 15px;
+  border: none;
+    margin: 0 auto;
+    width: 180px;
+  height: 50px;
+    display: flex;    
+    background-color: #FFBC0D;
+    text-align: center;   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
