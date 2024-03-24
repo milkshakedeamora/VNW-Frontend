@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +8,9 @@
 /*hamburguer - MainBody*/
 .line {
     display: block;
-  }
+}
 .hamburguer {
-    background-color: #FFC72C;
+    background-color: #FFC72C;    
 }
 .span {
     color: #DB0007;
@@ -37,7 +38,16 @@
     align-items:center;
     justify-content:space-evenly;
     padding: 25px 320px;
-  }
+}
 
-
-
+@media (max-width: 600px) {
+    .text-img {
+        padding: 25px 10px;
+    }
+    .img-atual {
+        width: 50%; 
+    }
+    .imagens {
+        padding: 25px 10px;
+    }
+}

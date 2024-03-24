@@ -5,6 +5,8 @@
   background-color: #edf5ef; 
   padding: 10px;
   
+  
+  
 }
 
 .logo {
@@ -17,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+ 
 }
 
 .header button {
@@ -26,6 +28,7 @@
   border: none;
   width: 180px;
   height: 50px;
+  font-family: "Inter", sans-serif;  
   font-size: 16px;  
   display: flex;
   align-items: center;
